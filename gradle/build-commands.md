@@ -1,5 +1,7 @@
 # Gradle Commands
 
+## Build & Run
+```bash
 ./gradlew clean openApiGenerate --info
 ./gradlew clean build --refresh-dependencies
 ./gradlew build -x test
