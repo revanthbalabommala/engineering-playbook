@@ -1,28 +1,15 @@
 # Gradle Commands
 
-## Build
-./gradlew build
-
-## Test
-./gradlew test
-
-## Clean
-./gradlew clean
-
-## Run
-./gradlew run
+./gradlew clean openApiGenerate --info
+./gradlew clean build --refresh-dependencies
+./gradlew build -x test
+./gradlew bootRun --rerun-tasks --args='--spring.profiles.active=local'
 
 ## Tasks
 ./gradlew tasks
 
 ## Dependencies
 ./gradlew dependencies
-
-## Build without tests
-./gradlew build -x test
-
-## Refresh dependencies
-./gradlew build --refresh-dependencies
 
 ## Stop daemon
 ./gradlew --stop
